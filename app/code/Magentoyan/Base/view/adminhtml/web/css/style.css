@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'magentoyan';
+  src: url('../fonts/magentoyan-Regular.ttf') format('truetype');
+;font-display:swap;}
+
+
+
+.admin__menu #menu-magentoyan-base-parent.level-0 > a::before {
+  content: 'A'!important;
+  font-family: 'magentoyan'!important;
+  font-size: 3.2rem!important;
+}
+
+
+.magentoyan-tab>._collapsible{padding-left: 3em}
+
+.magentoyan-tab>._collapsible::before
+{
+    content: 'A'!important;
+    font-family: 'magentoyan'!important;
+    font-size: 3.2rem!important;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+}

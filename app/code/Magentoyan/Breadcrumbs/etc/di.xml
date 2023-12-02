@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+  
+    
+   
+   <preference for="Magentoyan\Breadcrumbs\Api\Data\GridInterface" type="Magentoyan\Breadcrumbs\Model\Grid" />
+   
+   <type name="Magentoyan\Breadcrumbs\Model\ResourceModel\Grid\Grid\Collection">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">magentoyan_breadcrumbs</argument>
+            <argument name="eventPrefix" xsi:type="string">magentoyanco_records_grid_collection</argument>
+            <argument name="eventObject" xsi:type="string">magentoyan_breadcrumbs_data_collection</argument>
+            <argument name="resourceModel" xsi:type="string">Magentoyan\Breadcrumbs\Model\ResourceModel\Grid</argument>
+        </arguments>
+    </type>
+    
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="databreadcrumbs" xsi:type="string">Magentoyan\Breadcrumbs\Model\ResourceModel\Grid\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    
+</config>

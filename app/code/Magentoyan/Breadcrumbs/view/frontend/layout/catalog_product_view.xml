@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<page>
+    <body>
+    <referenceBlock name="breadcrumbs" remove="true" />
+    <referenceContainer name="page.top">
+        <block class="Magentoyan\Breadcrumbs\Block\Crumbblock" name="crumbs" as="crumbs" template="Magentoyan_Breadcrumbs::crumbs.phtml" />
+    </referenceContainer>
+    </body>
+</page>
